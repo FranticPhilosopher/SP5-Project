@@ -141,7 +141,7 @@ body {
     gap: 10px;
     max-height: 350px;
     background-color: rgb(240, 240, 240);
-    box-shadow: 0px 3px 10px #bfbfbf
+    box-shadow: 0px 1px 5px #bfbfbf
 }
 
 .pop-item-container::-webkit-scrollbar {
@@ -197,12 +197,12 @@ body {
 }
 
 .add-to-cartbutton {
-    margin: auto;
+    margin-top: 15px;
     padding: 5px 10px;
     border-radius: 20px;
     border-width: 1px;
     border-style: double;
-    border-color: #398cd9;
+    border-color: #d95939;
     transition: all 0.2s ease-in-out;
 }
 
@@ -220,7 +220,7 @@ body {
     border-color: #d1d1d1;
     border-width: 1px;
     background-color: rgb(240, 240, 240);
-    box-shadow: 0px 3px 10px #bfbfbf;
+    box-shadow: 0px 1px 5px #bfbfbf;
     padding: 5px;
 }
 
@@ -246,3 +246,78 @@ body {
     column-gap: 10px;
     justify-content: space-evenly;
 }
+
+.for-you-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.load-more-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.load-more-btn {
+    padding: 10px 55px;
+    border: 1px solid rgb(255, 115, 115);
+    background-color: transparent;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.load-more-btn:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px -1px 5px #b5b5b5,
+    -1px 1px 5px #ffffff;
+    
+}
+
+.ending-card {
+    
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1d1e2c;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    
+}
+
+.ending-text {
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.2s ease-in-out;
+}
+.ending-text a {
+    text-decoration-line: none;
+    color: inherit;
+}
+.ending-text a:hover {
+    text-decoration-line: underline;
+}
+
+.left-pad {
+    padding-left: 180px;
+}
+
+.follow-us-links {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: flex-start;
+    column-gap: 15px;
+}
+
+.for-you-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
