@@ -23,7 +23,7 @@ body {
     height: calc(3rem + 6px);
     align-items: center;
     justify-content: space-between;
-    
+    box-shadow: 0px 1px 10px rgb(209, 209, 209);
 }
 
 
@@ -128,8 +128,10 @@ body {
 
 .pop-item-container {
     overflow-y: hidden;
-    background-color: transparent;
     border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d4d4d4;
     padding: 20px;
     display: flex;
     flex-wrap: nowrap;
@@ -138,8 +140,8 @@ body {
     align-content: flex-start;
     gap: 10px;
     max-height: 350px;
-    /* box-shadow: 5px 5px 30px #bfbfbf,
-    -5px -5px 30px #ffffff; */
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 3px 10px #bfbfbf
 }
 
 .pop-item-container::-webkit-scrollbar {
@@ -148,14 +150,17 @@ body {
 
 
 .pop-item-label {
-    text-shadow: -2px -2px 6px rgba(255, 255, 255, 0.14),
-    2px 2px 6px rgba(0, 0, 0, 0.18);
+    margin:auto;
+    padding-top: 20px;
+    color: #363636;
+    /* text-shadow: -2px -2px 6px rgba(255, 255, 255, 0.14), */
+    /* 2px 2px 6px rgba(0, 0, 0, 0.18); */
 }
 
 .pop-items {
     overflow: hidden;
     cursor: pointer;
-    border-radius: inherit;
+    border-radius: 5px;
     max-width: 200px;
     min-width: 200px;
     min-height: 300px;
@@ -176,7 +181,7 @@ body {
 .pop-items:hover {
     cursor: pointer;
     border: 1px solid rgba(187, 137, 137, 0.358);
-    transform: translate(-5px, -5px);
+    transform: translate(-10px, -10px);
     box-shadow: 4px 4px 12px 5px rgb(209, 209, 209);
 }
 
@@ -207,4 +212,37 @@ body {
     color: #d95d39;
     border-color: #d95d39;
     cursor: pointer;
+}
+
+.saleitemcontainer {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d1d1d1;
+    border-width: 1px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 3px 10px #bfbfbf;
+    padding: 5px;
+}
+
+.saleheader {
+    display: flex;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: #c9c9c9;
+    border-width: 1px;
+    border-style: solid;
+    justify-content: space-between;
+    font-family: 'poppins';
+    font-size: small;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.saleitems {
+    padding: 20px 10px;
+    background-color: transparent;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-evenly;
 }
