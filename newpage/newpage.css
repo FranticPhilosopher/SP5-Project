@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+
+.container {
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgba(250, 235, 215, 0.267);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 15px;
+} 
+.flex-stretch{
+    align-self: stretch;
+}
+
+.header {
+    background-color: rgba(253, 221, 172, 0.685);
+    box-shadow: inset 1px -1px 3px rgba(0, 0, 0, 0.103), inset -1px 1px 3px rgba(255, 255, 255, 0.5) ;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: flex-start;
+    border-radius: 100px;
+}
+
+.navlinks {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    padding: 4px 0px;
+}
+
+.navlinks li a {
+    padding: 5px 8px;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navlinks li a:hover {
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.096), 0px 1px 3px rgba(0, 0, 0, 0.096);
+}
+
+.main-body {
+    padding: 10px;
+    display: flex;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "daily-grocerary healthcare fruits cupon-banner"
+        "bath personal-care pet-care cupon-banner";
+}
+
+.main-body div {
+    /* color and border of the cards */
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.daily-grocerary {
+    grid-area: daily-grocerary;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.healthcare {
+    grid-area: healthcare;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.fruits {
+    grid-area: fruits;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.bath {
+    grid-area: bath;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.personal-care {
+    grid-area: personal-care;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.pet-care {
+    grid-area: pet-care;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.main-body div h3 {
+    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.308); 
+}
+
+.main-body div {
+    padding: 10px;
+}
+
+.card-shop-more-btn {
+    padding: 8px;
+    background-color: #fce3bd;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 100rem;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+}
+
+.cupon-banner img {
+    overflow:hidden;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.card-shop-more-btn:hover {
+    transform: translate(-3px, -3px);
+    cursor: pointer;
+    color: #fcbf64;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+.poster img {
+    width: 100%;
+}
+.cupon-banner {
+    grid-area: cupon-banner;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    padding: 0px;
+}

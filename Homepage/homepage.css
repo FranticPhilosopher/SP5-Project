@@ -193,7 +193,8 @@ body {
 }
 
 .pop-items p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 
 .add-to-cartbutton {
