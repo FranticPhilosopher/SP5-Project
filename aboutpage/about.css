@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.heading {
+background-image: url("https://image.shutterstock.com/image-photo/grocery-shopping-cart-260nw-363658811.jpg");
+background-size: cover;
+height: 288px;
+padding-left: 154px;
+padding-top: 104px;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.144);
+}
+
+html{
+    background-color: white;
+}
+
+.about { 
+display: flex;
+align-items: center;
+flex-wrap: no-wrap;
+gap: 1.5rem;
+background-color: white;
+}
+
+.content{
+flex:1 1 40rem;
+padding: 27px 20px;
+}   
+
+.content span {
+    color: green;
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+
+.content h3 {
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+    padding-top: .5rem;
+}
+
+
+.content p{
+    color: rgb(16, 2, 27);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding:1rem 0;
+}
+.image {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    
+    
+    }
+.image img{
+    width: 100%;
+}
+.heading h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.heading p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    
+}
+.heading p a{
+    text-decoration: none;
+    color: black;
+}
+
+
+section.team {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.teamcontainer {
+    display: flex;
+    column-gap: 20px;
+}
+.memberinfo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 300px;
+    border: 2px solid rgb(210, 255, 48);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.memberinfo:hover {
+    width: 160px;
+    height: 160px;
+    box-shadow: 0px 14px 19px rgba(0, 0, 0, 0.192);
+}
+
+.content p {
+    font-family: 'Poppins';
+    line-height: 25px;
+    font-weight: 200;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.memberinfo img {
+    width: 100%;
+}
+.timg {
+    transform: translateY(-50px);
+}
+
+.teamcontainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamcontainer div h3{
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}

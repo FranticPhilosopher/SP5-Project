@@ -23,7 +23,7 @@ body {
     height: calc(3rem + 6px);
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 1px 10px rgb(209, 209, 209);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.185)
 }
 
 
@@ -71,7 +71,7 @@ body {
     border-color: antiquewhite;
 }
 .nav-links-container:hover {
-    padding: 4px 8px;
+    padding: 4px 15px;
     border-radius: 100px;
     border-style: solid;
     border-width: 1px;
@@ -204,6 +204,7 @@ body {
     border-width: 1px;
     border-style: double;
     border-color: #d95939;
+    background-color: white;
     transition: all 0.2s ease-in-out;
 }
 
@@ -213,6 +214,7 @@ body {
     color: #d95d39;
     border-color: #d95d39;
     cursor: pointer;
+    box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.178);
 }
 
 .saleitemcontainer {
