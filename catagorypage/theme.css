@@ -1,0 +1,134 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+.categories{
+	background-color: #dddddd;
+	width: 100%;
+}
+
+.categories .wrapper{
+	width: 80%;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:25px;
+	flex-direction:column;
+	padding:50px 0
+}
+.categories .wrapper .categories-container{
+	display:flex;
+	gap:35px;
+	flex-wrap:wrap;;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.categories .wrapper .categories-container .category{
+	width:150px;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+	border-radius:100%;
+    transition:.1s ease-out
+}
+
+.categories .wrapper .categories-container .category:hover{
+	cursor:pointer;
+}
+
+.categories .wrapper .categories-container .category:hover {
+	transform:scale(1.1);
+	transition:.1s ease-in;
+	box-shadow: -10px 10px 25px #848484,
+			10px -10px 25px #ffffff;
+}
+.categories .wrapper .categories-container .category:hover img{
+	filter: brightness(.5);
+	filter: blur(1px);
+}
+
+.categories .wrapper .categories-container .category::before{
+	content:'';
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#33333357;
+	position:absolute;
+	z-index:1;
+}
+
+
+.categories .wrapper .categories-container .category img{
+	height:100%;
+	width:100%;
+	object-fit:cover;
+	position:relative;
+}
+
+.categories .wrapper .categories-container .category .category-body{
+	position:absolute;
+	text-align:center;
+	color:#fff;
+	z-index:2;
+	height:100%;
+	width:100%;
+	top: -10px;
+	bottom:0;
+	left:0;
+	right:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.categories .wrapper .categories-container .category .category-body h4{
+	font-size:18px;
+	margin-bottom: 0;
+}
+
+.categories .wrapper .categories-container .category .category-body span{
+	font-size:.8rem
+}
+
+
+.btn-show-all{
+	display:block;
+	padding:10px 20px;
+	border-radius: 20px;
+	background-color:#E91E63;
+	color:#fff;
+	text-transform:uppercase;
+	outline:none;
+	border:0;
+	transition:.25s ease;
+	margin-top:30px;
+}
+
+.btn-show-all:hover{
+	outline:none;
+	border:0;
+	background-color:#980f3d;
+	cursor: pointer;
+	
+}
+
+
+.category-sub-title{
+	text-transform:uppercase;
+	color:var(--intech-theme-indigo);
+	font-weight:700;
+	font-size:.8rem;
+}
+.category-title{
+	text-transform:uppercase;
+	font-size:2rem;
+}
+
+.category-body span strong {
+	color: rgb(164, 255, 164);
+}

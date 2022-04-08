@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-  <title>SP5-Project</title>
-
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="theme.css" />
     <link rel="stylesheet" href="../Homepage/homepage.css" />
-    <link rel="stylesheet" href="../newpage/newpage.css" />
   </head>
-
   <body>
+    <div class="blackening" id="blackenign"></div>
+    <div class="contactmodal" id="contactmodal">
+      <div class="label">
+        <h3>Contact Us</h3>
+        <a href="#" class="canclebutton" id="cncbutton"><h3>✖</h3></a>
+      </div>
+      <div class="emailcont">
+        <label for="email">Email: </label>
+        <input type="text" placeholder="Email" id="email" />
+      </div>
+      <div class="emailcont">
+        <label for="phone">Phone: </label>
+        <input type="text" placeholder="Phone" id="email" />
+      </div>
+      <br />
+      <h3>Message</h3>
+      <br />
+      <textarea
+        name="tarea"
+        id="tarea"
+        cols="60"
+        rows="13"
+        placeholder="Enter your message"
+      ></textarea>
+      <button class="submitbtn">Submit</button>
+    </div>
+
     <header class="nav-container" id="navbar">
       <a href="../Homepage/homepage.html" class="logo"
         ><img src="../Homepage/logo.png" alt="logo" width="40px"
@@ -41,7 +65,7 @@
           </li>
         </div>
         <div class="nav-links-container">
-          <li><a href="newpage.html" class="nav-links">New</a></li>
+          <li><a href="../newpage/newpage.html" class="nav-links">New</a></li>
         </div>
         <div class="nav-links-container">
           <li><a href="#" class="nav-links">Review</a></li>
@@ -53,86 +77,77 @@
           <li><a href="../aboutpage/about.html" class="nav-links">About</a></li>
         </div>
       </div>
-      <button style="opacity: 0; cursor: default" class="cta-btn">
-        Contact us
-      </button>
+      <button style="opacity: 0; cursor: default;" class="cta-btn">Contact us</button>
     </header>
 
-    <div class="container">
-      <section class="header flex-stretch">
-        <ul class="navlinks">
-          <li><a href="#">Flash sale</a></li>
-          <li><a href="#">Today's deals</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="../Homepage/homepage.html">Goto Homepage</a></li>
-        </ul>
-      </section>
-      <section class="main-body flex-stretch">
-        <div class="daily-grocerary">
-          <div class="poster">
-            <img src="dailygroc.png" alt="dg" />
+    <div class="categories">
+      <div class="wrapper">
+        <h3 class="category-sub-title">This is the category section</h3>
+        <h3 class="category-title">Categories</h3>
+
+        <div class="categories-container">
+          <div class="category">
+            <img src="sakib1.png" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>Vegitables</h4>
+              <span><strong>97</strong> products available</span>
+            </div>
           </div>
-          <h3><b>Daily Grocery</b></h3>
-          <br />
-          <a href="dailygroc/groc.html">
-            <button class="card-shop-more-btn">Shop more</button>
-          </a>
-        </div>
-        <div class="healthcare">
-          <div class="poster">
-            <img src="healthcare.png" alt="dg" />
+
+          <div class="category">
+            <img src="sakib2.jpg" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>Fruits</h4>
+              <span><strong>25</strong> products available</span>
+            </div>
           </div>
-          <h3><b>health care</b></h3>
-          <br />
-          <a href="dailygroc/groc.html">
-            <button class="card-shop-more-btn">Shop more</button>
-          </a>
-        </div>
-        <div class="fruits">
-          <div class="poster">
-            <img src="fruits.png" alt="dg" />
+
+          <div class="category">
+            <img src="sakib3.jpg" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>Meat</h4>
+              <span><strong>10</strong> products available</span>
+            </div>
           </div>
-          <h3><b>Fruits</b></h3>
-          <br />
-          <a href="dailygroc/groc.html">
-            <button class="card-shop-more-btn">Shop more</button>
-          </a>
-        </div>
-        <div class="bath">
-          <div class="poster">
-            <img src="bath.png" alt="dg" />
+
+          <div class="category">
+            <img src="sakib4.jpg" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>Home & Kitchen</h4>
+              <span><strong>107</strong> products available</span>
+            </div>
           </div>
-          <h3><b>Bath-omatic</b></h3>
-          <br />
-          <a href="dailygroc/groc.html">
-            <button class="card-shop-more-btn">Shop more</button>
-          </a>
-        </div>
-        <div class="personal-care">
-          <div class="poster">
-            <img src="skin.png" alt="dg" />
+
+          <div class="category">
+            <img src="sakib5.jpg" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>Baby Care</h4>
+              <span><strong>37</strong> products available</span>
+            </div>
           </div>
-          <h3><b>Glow up</b></h3>
-          <br />
-          <a href="dailygroc/groc.html">
-            <button class="card-shop-more-btn">Shop more</button>
-          </a>
-        </div>
-        <div class="pet-care">
-          <div class="poster">
-            <img src="dog.jpg" alt="dg" />
+
+          <div class="category">
+            <img src="sakib6.jpg" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>SkinCare & Hygene</h4>
+              <span><strong>150</strong> products available</span>
+            </div>
           </div>
-          <h3><b>Doggo care</b></h3>
-          <br />
-          <a href="dailygroc/groc.html">
-            <button class="card-shop-more-btn">Shop more</button>
-          </a>
+
+          <div class="category">
+            <img src="sakib7.jpg" alt="" width="700" height="400" />
+            <div class="category-body">
+              <h4>Sports & Fitness</h4>
+              <span><strong>50</strong> products available</span>
+            </div>
+          </div>
         </div>
-        <div class="cupon-banner">
-          <img src="banner.jpg" alt="" />
-        </div>
-      </section>
+        <button class="btn-show-all" type="button" name="button">
+          Show All Categories
+        </button>
+      </div>
     </div>
+
     <section class="footer">
       <div class="ending-card">
         <div class="ending-text">
@@ -188,7 +203,6 @@
       </div>
     </section>
 
-    <script src="../Homepage/homepage.js"></script>
-    <script src="../newpage/newpage.js"></script>
+    <script src="catag.js"></script>
   </body>
 </html>

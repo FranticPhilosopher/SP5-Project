@@ -112,7 +112,14 @@ section.team {
 
 .memberinfo img {
     width: 100%;
+    filter: saturate(0);
+    transition: all 0.1s ease-in-out;
 }
+
+.memberinfo img:hover {
+    filter: saturate(1);
+}
+
 .timg {
     transform: translateY(-50px);
 }
