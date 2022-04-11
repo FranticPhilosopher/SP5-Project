@@ -1,0 +1,151 @@
+* {
+    font-family: 'poppins';
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#cart{
+    overflow-x: auto;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 60px;
+}
+
+#cart table td:nth-child(1){
+    width: 40px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 90px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 50px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4){
+    max-width: 20px;
+    text-align:center;
+}
+
+#cart table td:nth-child(5){
+    width: 127px;
+    text-align: center;
+}
+
+#cart table td:nth-child(6){
+    width: 40px;
+    text-align: center;
+} 
+
+#cart table td:nth-child(4){
+    width: 30px;
+    padding: 12px 5px 7px 20px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 10px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px ;
+}
+ 
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 0.5px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    padding: 7px 17px ;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#subtotal{
+    width: 40%;
+    margin-bottom: 30px;
+    margin-right: 8%;
+    margin-top: 2%;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+td input {
+    padding: 3px 5px;
+}
+
+td input:focus {
+    outline: none;
+    
+}
+
+.turnred {
+    transition: all 0.15s ease-in;
+}
+
+.turnred:hover {
+    fill: rgba(255, 0, 0, 0.726);
+}

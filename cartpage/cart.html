@@ -1,0 +1,135 @@
+<html>
+        <header class="nav-container" id="navbar">
+      <a href="../../Homepage/homepage.html" class="logo"
+        ><img src="../../Homepage/logo.png" alt="logo" width="40px"
+      /></a>
+      
+      <div class="searchbar-button-container">
+        <input
+          type="text"
+          name="Input"
+          class="searchbar"
+          placeholder="Search Here"
+          size="30"
+          spellcheck
+          required
+        />
+        <img
+          src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png"
+          class="searchbutton"
+          width="25px"
+          alt="search"
+        />
+      </div>
+      <div class="nav-items">
+        <div class="nav-links-container">
+          <li><a href="#" class="nav-links">catagory</a></li>
+        </div>
+        <div class="nav-links-container">
+          <li>
+            <a href="../../newpage/newpage.html" class="nav-links">New</a>
+          </li>
+        </div>
+        <div class="nav-links-container">
+          <li><a href="../customerreviewpage/cindex.html" class="nav-links">Review</a></li>
+        </div>
+        <div class="nav-links-container">
+          <li><a href="../../cartpage/Cart.html" class="nav-links">Cart</a></li>
+        </div>
+        <div class="nav-links-container">
+          <li>
+            <a href="../../aboutpage/about.html" class="nav-links">About</a>
+          </li>
+        </div>
+      </div>
+      <button style="opacity: 0; cursor: default" class="cta-btn">
+        Contact us
+      </button>
+    </header>
+    
+    <head>
+        <link rel="stylesheet" href="Cart.css">
+        <link rel="stylesheet" href="../Homepage/homepage.css">
+    </head>
+    <body>
+        <section id="Cart" class="section-p1">
+            <table width="80%">
+                <thead>
+                    <tr>
+                        <td>Image</td>
+                        <td>Product Name</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                        <td>Remove</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="image/products/a1.png" alt=" "></td>
+                        <td>Orange Juice</td>
+                        <td>40/=</td>
+                        <td><input type="number" value="1"></input></td>
+                        <td>40/=</td>
+                        <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-x turnred" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="image/products/a2.png" alt=" "></td>
+                        <td>Maggi Nuddles</td>
+                        <td>130/=</td>
+                        <td><input type="number" value="1"></input></td>
+                        <td>130/=</td>
+                        <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-x turnred" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="image/products/a3.png" alt=" "></td>
+                        <td>Jhal Muri</td>
+                        <td>10/=</td>
+                        <td><input type="number" value="1"></input></td>
+                        <td>10/=</td>
+                        <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-x turnred" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-add" class="section-p1">
+            <div id="Coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+
+            <div id="Subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal: </td>
+                        <td>180/=</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping: </td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total: </strong></td>
+                        <td><strong>180/=</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Procceed to checkout</button>
+            </div>
+
+        </section>
+
+
+
+    </body>
+</html>
